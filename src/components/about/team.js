@@ -4,122 +4,73 @@ import { media, Container, Section } from '@styles';
 import { GatsbyImage } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
-  padding-top: 6rem; /* Adjusted padding */
-  text-align: center;
+  padding-top: 10rem;
 
-  ${media.thone`
-    padding-top: 4.25rem;
-  `};
+  ${media.thone`padding-top: 4.25rem;`};
 `;
-
-const Title = styled.h2`
-  font-size: 48px; /* Bold title */
-  text-align: center;
-  margin-bottom: 1.5rem; /* Spacing below title */
-  font-weight: bold;
-
-  ${media.tablet`
-    font-size: 36px;
-  `};
-`;
-
-const Subtitle = styled.p`
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 4rem; /* Spacing below subtitle */
-  color: var(--dark-gray);
-
-  ${media.tablet`
-    font-size: 16px;
-    margin-bottom: 3rem;
-  `};
-`;
-
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
-  justify-items: center;
+  grid-gap: 46px;
 
   ${media.tablet`
     grid-template-columns: 1fr;
-    grid-gap: 3rem;
+    grid-gap: 24px;
   `};
 `;
-
 const Card = styled.div`
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  overflow: hidden;
-  border-radius: 12px;
-  cursor: pointer;
-
-  &:hover img {
-    transform: scale(1.1);
-  }
-
-  &:hover div {
-    opacity: 1;
-  }
-`;
-
-const ImageWrapper = styled.div`
-  position: relative;
-`;
-
-const StyledImage = styled(GatsbyImage)`
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-  border-radius: 12px;
-`;
-
-const Overlay = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 12px;
-`;
-
-const Name = styled.h3`
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-
-  ${media.thone`
-    font-size: 20px;
-  `};
-`;
-
-const ReadMoreButton = styled.button`
-  background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
-  padding: 0.5rem 1rem;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: grid;
+  gap: 6px 18px;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+`;
+const CenterText = styled.h1`
+  font-size: 104px;
+  margin-bottom: 5rem;
 
-  &:hover {
-    background-color: #fff;
-    color: #000;
+  ${media.desktop`font-size: 65px;`};
+`;
+const StyledImage = styled(Img)`
+  border-radius: 9999px;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  user-select: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1);
+
+  :hover {
+    transform: rotate(10deg) scale(1.1);
   }
+`;
+const Name = styled.h3`
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1;
 
-  ${media.tablet`
-    font-size: 14px;
+  ${media.thone`font-size: 27px;`};
+`;
+const Position = styled.span`
+  font-size: 18px;
+  color: var(--dark-gray);
+  font-weight: bold;
+`;
+const Description = styled.p`
+  grid-column: 2 / auto;
+  align-self: start;
+
+  margin: 0;
+  font-size: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  ${media.phablet`
+    font-size: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   `};
 `;
 
@@ -127,34 +78,42 @@ const Team = ({ data }) => {
   return (
     <StyledSection>
       <Container max>
-        <Title>Making it happen</Title>
-        <Subtitle>
-          Discover the Creative Minds Behind Our Toys, Shaping Future Learning in Classrooms Globally
-        </Subtitle>
+        <CenterText>Meet the team.</CenterText>
         <GridWrapper>
           <Card>
-            <ImageWrapper>
-              <StyledImage
-                image={data.chanul.childImageSharp.gatsbyImageData}
-                alt="Chanul Dandeniya"
-              />
-              <Overlay>
-                <Name>Chanul Dandeniya</Name>
-                <ReadMoreButton>Read More</ReadMoreButton>
-              </Overlay>
-            </ImageWrapper>
+            <StyledImage
+              fluid={data.chanul.childImageSharp.fluid}
+              alt="Chanul Dandeniya"
+              objectFit="cover"
+            />
+            <div>
+              <Name>Chanul Dandeniya</Name>
+              <Position>President</Position>
+            </div>
+            <Description>
+              Hello World! My name is Chanul Dandeniya, and I will be serving as your President here
+              at CODE. I’m currently a sophomore, and one of my biggest goals is to change the world
+              through the use of computer science! I am looking forward to meeting each and every
+              one of you and help you on your journey in engineering and computer science!
+            </Description>
           </Card>
           <Card>
-            <ImageWrapper>
-              <StyledImage
-                image={data.kyrylo.childImageSharp.gatsbyImageData}
-                alt="Ahad Hassan"
-              />
-              <Overlay>
-                <Name>Ahad Hassan</Name>
-                <ReadMoreButton>Read More</ReadMoreButton>
-              </Overlay>
-            </ImageWrapper>
+            <StyledImage
+              fluid={data.kyrylo.childImageSharp.fluid}
+              alt="Ahad Hassan"
+              objectFit="cover"
+            />
+            <div>
+              <Name>Ahad Hassan</Name>
+              <Position>Vice President</Position>
+            </div>
+            <Description>
+              Hi everyone! My name is Ahad Hassan and I am the vice president of CODE. I am a
+              sophomore and I've been studying software engineering for 8 years, currently focusing
+              on web development and UI/UX design. I believe that technology is here to make the
+              world a better place and I can’t wait to spark your interest and share my experience
+              of computer science to you all.
+            </Description>
           </Card>
         </GridWrapper>
       </Container>

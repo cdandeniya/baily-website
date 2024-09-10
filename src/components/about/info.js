@@ -5,11 +5,9 @@ import { media, Container, Section, Card, DefaultText } from '@styles';
 const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: 1rem;  /* Add space between the cards */
 
   ${media.desktop`
     flex-direction: column;
-    gap: 2rem;  /* Add more space between cards on mobile */
   `};
 `;
 
@@ -39,7 +37,7 @@ const Info = ({ data }) => {
     <Section>
       <Container>
         <CardsWrapper>
-          <Card width="48%" bg="var(--blue)" padding="2rem">
+          <Card width="48%" bg="var(--blue)">
             <TextWrapper>
               <Title>About Baily AI</Title>
               <DefaultText>
@@ -48,7 +46,7 @@ const Info = ({ data }) => {
             </TextWrapper>
           </Card>
 
-          <Card width="48%" bg="var(--yellow)" padding="2rem">
+          <Card width="48%" bg="var(--yellow)">
             <TextWrapper>
               <Title>Our mission</Title>
               <DefaultText>
