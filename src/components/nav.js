@@ -200,10 +200,10 @@ class Nav extends Component {
                   <NavLink to="/about">About</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/codefest">CodeFest</NavLink>
+                  <NavLink to="/codefest">Blog</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/sponsors">Sponsors</NavLink>
+                  <NavLink to="/sponsors">Schedule Demo</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLinkA href="https://bank.hackclub.com/donations/start/techcodes">
