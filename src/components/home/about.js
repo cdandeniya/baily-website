@@ -79,15 +79,10 @@ const About = ({ data }) => {
           <TextWrapper>
             <Label>About us</Label>
             <Title>
-              We’re a student-led nonprofit looking to increase computer science engagement.
+              We Empower Young Minds to Learn, Grow, and Dream Through Play.
             </Title>
             <CustomDescription>
-              CODE is dedicated to fostering computer science education to students of all
-              backgrounds and expose them to the creativity and innovation technology brings. By
-              hosting numerous activities, such as guest speaker events, workshops, hackathons, and
-              programming competitions, we are able to fulfill our goal on a wider scale. Although
-              we are primarily based in the NYC Metropolitan Area, we are expanding our reach
-              through numerous partnerships and corporations.
+              At Baily AI, we blend the wonder of play with the power of learning. Our AI-powered toys are not just toys; they're companions designed to foster creativity, curiosity, and intelligence in children aged 5-12. Through customizable features and engaging content, each toy adapts to your child's unique interests, helping them explore technology and learn at their own pace. Join us in nurturing the next generation of thinkers and doers.
             </CustomDescription>
           </TextWrapper>
         </Card>

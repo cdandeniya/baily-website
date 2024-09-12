@@ -112,10 +112,10 @@ const Menu = ({ menuOpen, toggleMenu }) => {
               <NavLink to="/about">About</NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/codefest">CodeFest</NavLink>
+              <NavLink to="/codefest">Blog</NavLink>
             </NavListItem>
             <NavListItem>
-              <NavLink to="/sponsors">Sponsors</NavLink>
+              <NavLink to="/sponsors">Schedule Demo</NavLink>
             </NavListItem>
             <NavListItem>
               <NavLinkA href="https://bank.hackclub.com/donations/start/techcodes">Donate</NavLinkA>

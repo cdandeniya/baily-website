@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Council of Digital Engineers`,
-    description: `Council of Digital Engineers is a student-led nonprofit organization dedicated to fostering computer science education to students of all backgrounds.`,
-    siteUrl: `https://techcodes.org`,
+    title: `Baily AI`,
+    description: `Baily AI offers customizable, AI-powered educational toys that promote interactive learning and creativity for children aged 5-12, ideal for classroom and home use.`,
+    siteUrl: `https://bailysbox.com`,
     image: '/og.png',
   },
   plugins: [
