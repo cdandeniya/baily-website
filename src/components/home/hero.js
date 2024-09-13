@@ -128,7 +128,7 @@ const Hero = ({ data }) => {
           </div>
         </LowerTop>
         <TextWrapper>
-          <BigText>We’re inspiring students to pursue their passions in technology.</BigText>
+          <BigText>Where Magic Meets Learning: Discover Innovation in Every Toy!</BigText>
         </TextWrapper>
         <div />
         <BottomRight
