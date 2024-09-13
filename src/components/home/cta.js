@@ -67,8 +67,8 @@ const CTA = () => {
           <StyledCard width="50%" bg="var(--light-purple)">
             <PaddingWrapper>
               <TextWrapperA href="https://bank.hackclub.com/donations/start/techcodes">
-                <Title>Donate</Title>
-                <Subtitle>Help us out by making a small donation</Subtitle>
+                <Title>Schedule Demo</Title>
+                <Subtitle>Bring innovation into your classroom today!</Subtitle>
               </TextWrapperA>
             </PaddingWrapper>
           </StyledCard>
