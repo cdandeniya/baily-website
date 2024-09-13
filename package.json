@@ -1,9 +1,9 @@
 {
-  "name": "@baily/v1",
+  "name": "@techcodes/v1",
   "private": true,
-  "description": "Baily AI offers customizable, AI-powered educational toys that promote interactive learning and creativity for children aged 5-12, ideal for classroom and home use.",
+  "description": "The official Council of Digital Engineers website.",
   "version": "0.1.0",
-  "author": "Chanul Dandeniya <cdandeniya1.com>",
+  "author": "Kyrylo Orlov <dev@kyryloorlov.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "classnames": "^2.2.6",
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/cdandeniya/baily-website" 
+    "url": "https://github.com/CodeBTHS/website"
   },
   "bugs": {
-    "url": "https://github.com/cdandeniya/baily-website/issues"
+    "url": "https://github.com/CodeBTHS/website/issues"
   }
 }

@@ -57,9 +57,10 @@ const Hero = ({ data }) => {
       <Container max>
         <Row>
           <Col bigger>
-            <BigText>We're the Toymakers of the Future: Crafting Tomorrow's Learning Today</BigText>
+            <BigText>We're the students creating the new world through computer science</BigText>
             <Description>
-              Baily is empowering young minds to explore, create, and thrive in a digital world.
+              CODE is dedicated to fostering computer science education to students of all
+              backgrounds and expose them to the creativity and innovation technology brings.
             </Description>
           </Col>
           <Col>
