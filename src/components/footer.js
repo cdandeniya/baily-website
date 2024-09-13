@@ -126,7 +126,7 @@ const Footer = () => {
             <Col>
               <ColTitle>Socials</ColTitle>
               <Socials>
-                <a href="https://www.instagram.com/baily.ai/" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/bthscode" target="_blank" rel="noopener noreferrer">
                   <FormattedIcon name="instagram" />
                 </a>
                 <a
@@ -155,12 +155,12 @@ const Footer = () => {
         <RowBottom>
           <a href="/press-release.pdf">Download March press release</a>
           <Copy>
-            &copy; {currentYear} Baily AI Inc. (EIN: 81-1111111)
+            &copy; {currentYear} Council of Digital Engineers. 501(c)(3) nonprofit (EIN: 81-2908499)
           </Copy>
           <Credits>
             Made by{' '}
-            <a href="https://www.linkedin.com/in/cdandeniya/" target="_blank" rel="noopener noreferrer">
-              Chanul
+            <a href="https://kyryloorlov.com" target="_blank" rel="noopener noreferrer">
+              Kyrylo
             </a>
           </Credits>
         </RowBottom>

@@ -33,9 +33,14 @@ const Info = ({ data }) => {
         <CardsWrapper>
           <Card width="48%" bg="var(--blue)">
             <TextWrapper>
-              <Title>About Baily AI</Title>
+              <Title>About CODE</Title>
               <DefaultText>
-                At Baily, we are pioneers in the next wave of educational toys. Our AI-powered companions are more than just toys; they are gateways to sparking lifelong curiosity and foundational learning. Designed with the future in mind, each Baily AI toy adapts to the individual child, making learning personal, engaging, and fun. By integrating cutting-edge technology with child-friendly design, we create experiences that educate, inspire, and delight.
+                CODE is a student-run 501(c)(3) nonprofit, for students, by students. Founded by
+                Chanul Dandeniya and Kyrylo Orlov in June 2020, in hopes to rejuvenate and revive
+                student interest in programming in the largest and most prestigious STEM secondary
+                institution, Brooklyn Technical High School, through countless initiatives and
+                programs CODE has now grown and impacted students all across the NYC Metropolitan
+                area
               </DefaultText>
             </TextWrapper>
           </Card>
@@ -43,7 +48,11 @@ const Info = ({ data }) => {
             <TextWrapper>
               <Title>Our mission</Title>
               <DefaultText>
-                Our mission at Baily is to be the toymakers of the future, transforming how children learn through play. We strive to develop interactive toys that blend educational content with personal growth opportunities, fostering both cognitive and creative skills. Our goal is to build a brighter future where every child is equipped with the tools to explore, create, and lead in a changing world. Every toy we craft is a step towards making this vision a reality, ensuring that our young users are inspired to pursue their passions and embrace the joy of learning.
+                Although diversity efforts are a large talking point in society today, diversity in
+                STEM continues to decrease. We’re addressing these issues at their roots by bringing
+                together like-minded students across the entire tri-state, especially those
+                marginalized and disadvantaged, through hackathons, competitions, weekly meetings,
+                and other advantageous events designed by our team.
               </DefaultText>
             </TextWrapper>
           </Card>

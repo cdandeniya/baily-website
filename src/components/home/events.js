@@ -87,11 +87,14 @@ const Events = ({ data }) => {
         </ImageWrapper>
         <StyledCard bg="var(--yellow)" color="var(--text)" width="60%">
           <TextWrapper>
-            <Title>Meet “Curio”</Title>
+            <Title>We also host some pretty cool events</Title>
             <Description>
-            Greetings! I'm your friendly AI companion, crafted to ignite your curiosity and passion for learning. Together, we’ll explore endless adventures and unlock new wonders every day. With my customizable skills and dynamic personality, I'm here to grow and learn right alongside you, making every moment of play educational and fun!
+              We have hosted and continue to host events like hackathons and guest panels to help
+              inspire computer science education in today’s youth, especially those marginalized and
+              disadvantaged. Organized by high-school students, we are able to gather students
+              across the United States who share a similar passion for computer science.
             </Description>
-            <Button to="/about">See what I can do!</Button>
+            <Button to="/events">Explore events</Button>
           </TextWrapper>
         </StyledCard>
       </Container>
