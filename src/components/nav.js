@@ -203,12 +203,7 @@ class Nav extends Component {
                   <NavLink to="/codefest">CodeFest</NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink to="/sponsors">Sponsors</NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLinkA href="https://bank.hackclub.com/donations/start/techcodes">
-                    Donate
-                  </NavLinkA>
+                  <NavLink to="/sponsors">Schedule Demo</NavLink>
                 </NavItem>
                 <NavItem>
                   <NavLink to="/contact">Contact</NavLink>
