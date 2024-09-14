@@ -1,9 +1,9 @@
 {
-  "name": "@techcodes/v1",
+  "name": "@baily-website",
   "private": true,
-  "description": "The official Council of Digital Engineers website.",
+  "description": "Baily AI.",
   "version": "0.1.0",
-  "author": "Kyrylo Orlov <dev@kyryloorlov.com>",
+  "author": "Chanul Dandeniya",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "classnames": "^2.2.6",
