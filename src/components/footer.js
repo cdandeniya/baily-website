@@ -117,52 +117,45 @@ const Footer = () => {
             <Col>
               <ColTitle>Contact us</ColTitle>
               <ColLink
-                href="mailto:team@techcodes.org?subject=Hello!"
+                href="mailto:hey@bailysbox.com?subject=Hello!"
                 target="_blank"
                 rel="noopener noreferrer">
-                team@techcodes.org
+                hey@bailysbox.com
               </ColLink>
             </Col>
             <Col>
               <ColTitle>Socials</ColTitle>
               <Socials>
-                <a href="https://instagram.com/bthscode" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/baily.ai/" target="_blank" rel="noopener noreferrer">
                   <FormattedIcon name="instagram" />
                 </a>
                 <a
-                  href="https://www.linkedin.com/company/council-of-digital-engineers"
+                  href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noopener noreferrer">
                   <FormattedIcon name="linkedin" />
                 </a>
                 <a
-                  href="https://www.youtube.com/channel/UC74GHmtwQoj3bFxw2pBYM0A"
+                  href="https://www.youtube.com/"
                   target="_blank"
                   rel="noopener noreferrer">
                   <FormattedIcon name="youtube" />
                 </a>
-                <a href="https://github.com/CodeBTHS" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">
                   <FormattedIcon name="github" />
                 </a>
-                <a href="https://twitter.com/bthscode" target="_blank" rel="noopener noreferrer">
+                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                   <FormattedIcon name="twitter" />
                 </a>
               </Socials>
             </Col>
           </RowInRow>
-          <Logo src={CODELogo} alt="Council of Digital Engineers" />
+          <Logo src={CODELogo} alt="Baily AI" />
         </Row>
         <RowBottom>
-          <a href="/press-release.pdf">Download March press release</a>
           <Copy>
-            &copy; {currentYear} Council of Digital Engineers. 501(c)(3) nonprofit (EIN: 81-2908499)
+            &copy; {currentYear} Baily AI. (EIN: 81-2908499)
           </Copy>
-          <Credits>
-            Made by{' '}
-            <a href="https://kyryloorlov.com" target="_blank" rel="noopener noreferrer">
-              Kyrylo
-            </a>
-          </Credits>
         </RowBottom>
       </Container>
     </FooterSection>
