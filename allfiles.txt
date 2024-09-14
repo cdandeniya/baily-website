@@ -24,22 +24,6 @@ d7309a35c6bddf0f51408231c5eb839052bd8b39 package-lock.json
 81916d58a9fed8993cd9737dcd07ed0921da44d5 src/components/about/index.js
 7795a2fcd2d6e156c9e7e1ec97df22a7b3b0454e src/components/about/info.js
 462b7cea65a80a8c779c4889a2a8893f436e30d3 src/components/about/team.js
-e0b7cabfca1c773d3d20abafb456c1b9fa69c933 src/components/codefest
-5513a03533733592e9beedc84340c429e3cd58ff src/components/codefest/Speaker images
-8ddfb91c04e4f717f7a5de3d34c7bb980cdcacc7 src/components/codefest/Speaker images/Calvin.jpg
-2033d21f780972dba8736ce271e24e008738a857 src/components/codefest/Speaker images/ChrisSean.jpg
-f9ae7badede7a7a2986391f1c05e5761c115db97 src/components/codefest/Speaker images/JacobThomas.jpg
-9e9b577f3c1b36441f196694a500d0ac7c6da9e5 src/components/codefest/Speaker images/encodeJustice.png
-95cd944c11b1707299d4c51c4a3906bae7a6e41d src/components/codefest/Speaker images/mackenzie.jpg
-a4789a114996ca0a5770894e43f1fe16ba19a9db src/components/codefest/Speaker images/matthieu.jpg
-b6c2bd5738077cd1ae7bd54914e2e7c9cef45a8d src/components/codefest/community.js
-96b656834e4a8a55e0b7bb7b7536578333a9f4a8 src/components/codefest/contacts.js
-1040656a8c0bc00099ed01e503d539710c96be02 src/components/codefest/hero.js
-5b10609a4edce0e32a782864ebb345a02047be16 src/components/codefest/index.js
-309242962c4b45d82850333aa40c2562fb27c3c3 src/components/codefest/prizes.js
-0af732ed55f0554eafd66b08fce0290311c9151b src/components/codefest/schedule.js
-c65ff8ff394cd14e1c093a25508e09c1deb9258e src/components/codefest/speakers.js
-1a84bd42f5ec9d178df3a76beff3b6d8c49ea5d0 src/components/codefest/sponsors.js
 c477ab8aa7dd49198c5a95bef2e1395efa591611 src/components/event
 47874314e993daf3b66f62dd7e05f7b8671eda5d src/components/event/description.js
 e172580da56a48bcad95961b9f9f74e05fb7843e src/components/event/hero.js
@@ -74,10 +58,6 @@ e23ce1aacc0a5f2e60fe8fb8c416211c97bdfd03 src/components/sponsors/index.js
 68e104c34c1f6c9b9108617a9f2c1d38f2a6562f src/hooks
 44a4cf15e481f830447e1428a61f8537e798dc9f src/hooks/useMousePosition.js
 ba062f62561fdb907f4ed8f43b9d9a57189869e1 src/images
-fbacf5016e69150ba5eb3505d165e628888c1ec9 src/images/codefest
-eae1368633ccc4b6952b33660e6c5743db12bc97 src/images/codefest/Shapes.png
-8714787689b98584424da49ccddb75d80e2f389c src/images/codefest/Shapes.svg
-6b71e29ab53020082c7e51433189e7b397d32f72 src/images/codefest/codefest.svg
 503a5d57864f96eeda1b50dc16ad6de7e7b5e13d src/images/favicon
 e623b4a050fd0205bda4e69f68b9ee9440c7c2b0 src/images/favicon/android-chrome-192x192.png
 9f319c26c19dccf5385fac0d8c07d34435593be5 src/images/favicon/android-chrome-512x512.png
@@ -132,11 +112,9 @@ a3eb8ae7d415e7f1552081f504bcaf75188742d6 src/images/team/nirjhor.png
 adcb939aaf421da8135e8bf22ab978a993fcd3be src/pages
 2999d2f285a81de59d276c839b206df4581a72a6 src/pages/404.js
 128cdebbd7b9ba7ea46cba765ba427cebeab4d08 src/pages/about.js
-975bf743684c0631a870e76b1ed182c5f031a81d src/pages/codefest.js
 4ea08c2e3669fa3b90edb4f61080788a7f53ee20 src/pages/contact.js
 da46d81e4be3a904e8a33036e1b95d1e2309e564 src/pages/index.js
 c30abd96ae4e62d14cbe7573e80e34da60856f88 src/pages/sponsors.js
-90211a050dc7c4c797fe768f0da6f3a6e44680b4 src/pages/summer-camp.js
 8733da86560652ffaf97738c2dc8ee728394dffb src/styles
 dd1bdeca61352c8d1c90eb3bf0ce3031fed28a0f src/styles/GlobalStyle.js
 2a50aa17949abd2932470e79361bb5f083531f57 src/styles/button.js
