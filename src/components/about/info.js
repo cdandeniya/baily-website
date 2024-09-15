@@ -36,7 +36,7 @@ const ImageWrapper = styled.div`
   align-items: center;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -20%); /* Adjust this to control the image's vertical position */
+  transform: translate(-50%, -20%);
   width: 300px; /* Adjust the size of the image */
 `;
 
@@ -78,3 +78,15 @@ const Info = ({ data }) => {
 };
 
 export default Info;
+
+export const query = graphql`
+  query {
+    lifting: file(relativePath: { eq: "props/lift.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

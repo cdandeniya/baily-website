@@ -17,6 +17,6 @@ Code under MIT License, assets may not be re-used or re-distributed.
 
 ---
 
-By [@kyryloren](https://kyryloorlov.com) and **@SantiagoVira** for Council of Digital Engineers, 2021. MIT License.
+By [@cdandeniya] for Baily AI, 2024. MIT License.
 >>>>>>> 83e0cd8 (Initial commit)
 >>>>>>> d05f5e6 (initial commit)
