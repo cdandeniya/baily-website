@@ -65,13 +65,12 @@ const Hero = ({ data }) => {
       <Container max>
         <Row>
           <Col bigger>
-            <BigText>We rely on our sponsors to help bring STEM education to students.</BigText>
+            <BigText>Experience the Magic: Schedule Your Demo at your School Today!</BigText>
             <Description>
-              Sponsors are at the core of our organization. Thanks to them, we’re able to
-              continue to spreading computer science education to students around the nation.
+              Discover how our AI-powered toys can enhance learning in your classroom. See firsthand how Baily inspires curiosity and educational engagement in schools.
             </Description>
             <ButtonWrapper>
-              <Button href="/sponsorship-prospectus.pdf">Download our prospectus</Button>
+              <Button href="/sponsorship-prospectus.pdf">Schedule Your Demo</Button>
             </ButtonWrapper>
           </Col>
           <Col>

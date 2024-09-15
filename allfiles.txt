@@ -54,7 +54,6 @@ b66c387855db087dd578957aaf158b24a3eab801 src/components/nav.js
 d55d304d9f12b5dbe8cb06acffaa9de5aaa51496 src/components/sponsors
 a57cf3f21b4bbefc801e12602a6a48e448d4d5db src/components/sponsors/hero.js
 e23ce1aacc0a5f2e60fe8fb8c416211c97bdfd03 src/components/sponsors/index.js
-3a03afa6f386acbbfeb8282360f6214d0a200877 src/components/sponsors/list.js
 68e104c34c1f6c9b9108617a9f2c1d38f2a6562f src/hooks
 44a4cf15e481f830447e1428a61f8537e798dc9f src/hooks/useMousePosition.js
 ba062f62561fdb907f4ed8f43b9d9a57189869e1 src/images
