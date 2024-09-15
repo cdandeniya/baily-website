@@ -1,9 +1,9 @@
 {
-  "name": "@techcodes/v1",
+  "name": "@baily/v1",
   "private": true,
-  "description": "The official Council of Digital Engineers website.",
+  "description": "Welcome to Baily AI.",
   "version": "0.1.0",
-  "author": "Kyrylo Orlov <dev@kyryloorlov.com>",
+  "author": "Chanul Dandeniya",
   "dependencies": {
     "babel-plugin-styled-components": "^1.12.0",
     "classnames": "^2.2.6",
@@ -42,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CodeBTHS/website"
+    "url": "https://github.com/cdandeniya/baily-website"
   },
   "bugs": {
-    "url": "https://github.com/CodeBTHS/website/issues"
+    "url": "https://github.com/cdandeniya/baily-website/issues"
   }
 }
