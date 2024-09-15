@@ -1,16 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, DefaultText } from '@styles';
-import Img from 'gatsby-image';
-
-const StyledSection = styled(Section)`
-  padding-top: 35vh;
-`;
 
 const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  position: relative; /* Allows the image to be positioned relative to the cards */
+
+  div:last-child {
+    ${media.desktop`
+      margin-top: 2rem;
+    `};
+  }
 
   ${media.desktop`
     flex-direction: column;
@@ -20,7 +20,9 @@ const CardsWrapper = styled.div`
 const TextWrapper = styled.div`
   color: var(--text);
 
-  ${media.thone`text-align: center;`};
+  ${media.thone`
+    text-align: center;
+  `};
 `;
 
 const Title = styled.h2`
@@ -30,23 +32,9 @@ const Title = styled.h2`
   margin: 0;
 `;
 
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -20%);
-  width: 300px; /* Adjust the size of the image */
-`;
-
-const StyledImage = styled(Img)`
-  width: 100%;
-`;
-
 const Info = ({ data }) => {
   return (
-    <StyledSection>
+    <Section>
       <Container>
         <CardsWrapper>
           <Card width="48%" bg="var(--blue)">
@@ -58,11 +46,6 @@ const Info = ({ data }) => {
             </TextWrapper>
           </Card>
 
-          {/* Character image centered between the cards */}
-          <ImageWrapper>
-            <StyledImage fluid={data.lifting.childImageSharp.fluid} alt="Character holding toys" />
-          </ImageWrapper>
-
           <Card width="48%" bg="var(--yellow)">
             <TextWrapper>
               <Title>Our mission</Title>
@@ -73,20 +56,8 @@ const Info = ({ data }) => {
           </Card>
         </CardsWrapper>
       </Container>
-    </StyledSection>
+    </Section>
   );
 };
 
 export default Info;
-
-export const query = graphql`
-  query {
-    lifting: file(relativePath: { eq: "props/lift.png" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`;
