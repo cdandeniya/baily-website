@@ -36,7 +36,7 @@ const ContactPage = () => {
           </span>
           Have an idea, question, or just want to talk? You can{' '}
           <a
-            href="mailto:hey@bailysbox.com?subject=Hello!"
+            href="mailto:team@techcodes.org?subject=Hello!"
             target="_blank"
             rel="noopener noreferrer">
             contact us
