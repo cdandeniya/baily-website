@@ -1,6 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Hero, About, Events, Sponsor, CTA } from '@components/home';
+import { Hero, About, Events, CTA } from '@components/home';
 
 const HomePage = ({ data }) => {
   return (
@@ -13,9 +13,6 @@ const HomePage = ({ data }) => {
       </div>
       <div data-scroll-section>
         <Events data={data} />
-      </div>
-      <div data-scroll-section>
-        <Sponsor />
       </div>
       <div data-scroll-section>
         <CTA />
