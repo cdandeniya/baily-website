@@ -5,35 +5,26 @@ import Img from 'gatsby-image';
 
 const StyledSection = styled(Section)`
   padding-top: 35vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center; /* Ensure content is centered */
 `;
 
 const TextWrapper = styled.div`
   max-width: 1000px;
-  text-align: center; /* Ensure the text is centered */
 
   ${media.massive`
     padding-top: 8rem;
     max-width: 1500px;
   `};
-  ${media.thone`text-align: center;`};
+  ${media.thone`text-align: left;`}; /* Keep text left-aligned */
 `;
 
 const ImageWrapper = styled.div`
-  position: relative; /* Change to relative for better control in flex layout */
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
-  align-items: center; /* Centers the image vertically */
+  justify-content: center; /* Center the image horizontally */
+  margin-top: 2rem; /* Add some space between the text and the image */
 `;
 
 const StyledImage = styled(Img)`
   width: 800px;
-  transform: translate(0, 0); /* Adjust for flex layout, centering the image */
-  margin-top: 2rem;
 
   ${media.massive`
     width: 700px;
@@ -66,7 +57,7 @@ const Title = styled.h1`
 
 const CustomDescription = styled(DefaultText)`
   max-width: 75%;
-  margin: 0 auto; /* Center the description horizontally */
+  margin: 0; /* Keep the description left-aligned */
 
   ${media.tablet`max-width: 100%;`};
 `;
