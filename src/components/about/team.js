@@ -100,7 +100,7 @@ const Team = ({ data }) => {
           <Card>
             <StyledImage
               fluid={data.kyrylo.childImageSharp.fluid}
-              alt="Kyrylo Orlov"
+              alt="Ahad Hassan"
               objectFit="cover"
             />
             <div>
@@ -108,7 +108,7 @@ const Team = ({ data }) => {
               <Position>Vice President</Position>
             </div>
             <Description>
-              Hi everyone! My name is Kyrylo Orlov and I am the vice president of CODE. I am a
+              Hi everyone! My name is Ahad Hassan and I am the vice president of CODE. I am a
               sophomore and I've been studying software engineering for 8 years, currently focusing
               on web development and UI/UX design. I believe that technology is here to make the
               world a better place and I can’t wait to spark your interest and share my experience
