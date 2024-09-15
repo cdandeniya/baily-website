@@ -1,24 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, DefaultText } from '@styles';
+import Img from 'gatsby-image';
+
+const StyledSection = styled(Section)`
+  padding-top: 35vh;
+`;
 
 const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-
-  div :last-child {
-    ${media.desktop`margin-top: 2rem;`};
-  }
+  position: relative; /* Allows the image to be positioned relative to the cards */
 
   ${media.desktop`
     flex-direction: column;
   `};
 `;
+
 const TextWrapper = styled.div`
   color: var(--text);
 
   ${media.thone`text-align: center;`};
 `;
+
 const Title = styled.h2`
   font-size: 65px;
   letter-spacing: -4px;
@@ -26,9 +30,23 @@ const Title = styled.h2`
   margin: 0;
 `;
 
+const ImageWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -20%); /* Adjust this to control the image's vertical position */
+  width: 300px; /* Adjust the size of the image */
+`;
+
+const StyledImage = styled(Img)`
+  width: 100%;
+`;
+
 const Info = ({ data }) => {
   return (
-    <Section>
+    <StyledSection>
       <Container>
         <CardsWrapper>
           <Card width="48%" bg="var(--blue)">
@@ -39,6 +57,12 @@ const Info = ({ data }) => {
               </DefaultText>
             </TextWrapper>
           </Card>
+
+          {/* Character image centered between the cards */}
+          <ImageWrapper>
+            <StyledImage fluid={data.lifting.childImageSharp.fluid} alt="Character holding toys" />
+          </ImageWrapper>
+
           <Card width="48%" bg="var(--yellow)">
             <TextWrapper>
               <Title>Our mission</Title>
@@ -49,7 +73,7 @@ const Info = ({ data }) => {
           </Card>
         </CardsWrapper>
       </Container>
-    </Section>
+    </StyledSection>
   );
 };
 
