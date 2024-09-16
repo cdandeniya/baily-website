@@ -1,51 +1,16 @@
 {
-  "name": "@baily/v1",
-  "private": true,
-  "description": "Welcome to Baily AI.",
-  "version": "0.1.0",
-  "author": "Chanul Dandeniya",
-  "dependencies": {
-    "babel-plugin-styled-components": "^1.12.0",
-    "classnames": "^2.2.6",
-    "framer-motion": "^3.2.1",
-    "gatsby": "^2.26.1",
-    "gatsby-image": "^2.5.0",
-    "gatsby-plugin-google-fonts": "^1.0.1",
-    "gatsby-plugin-google-gtag": "^2.8.0",
-    "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^2.6.1",
-    "gatsby-plugin-offline": "^3.4.0",
-    "gatsby-plugin-react-helmet": "^3.4.0",
-    "gatsby-plugin-robots-txt": "^1.5.5",
-    "gatsby-plugin-sharp": "^2.8.0",
-    "gatsby-plugin-sitemap": "^2.10.0",
-    "gatsby-plugin-styled-components": "^3.8.0",
-    "gatsby-source-filesystem": "^2.5.0",
-    "gatsby-transformer-sharp": "^2.6.0",
-    "locomotive-scroll": "^4.1.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
-    "styled-components": "^5.2.1"
-  },
-  "devDependencies": {
-    "prettier": "2.2.1"
-  },
-  "license": "MIT",
+  "name": "website-main",
+  "version": "1.0.0",
+  "description": "<p align=\"center\"><img width=\"200\" alt=\"Baily AI logo\" src=\"https://imgur.com/a/PBuGMn2\"></p> <h1 align=\"center\"><a href=\"https://bailysbox.com/\">Baily AI Website</a></h1> <p align=\"center\"><i>The official repository for the Baily AI website</i></p>",
+  "main": "gatsby-browser.js",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cdandeniya/baily-website"
-  },
-  "bugs": {
-    "url": "https://github.com/cdandeniya/baily-website/issues"
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gatsby": "^5.13.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
