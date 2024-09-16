@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, DefaultText } from '@styles';
 import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';  // Import graphql from Gatsby
 
 const StyledSection = styled(Section)`
   padding-top: 35vh;
@@ -117,3 +118,18 @@ const About = ({ data }) => {
 };
 
 export default About;
+
+// GraphQL query to fetch the image data
+export const query = graphql`
+  query {
+    searching: file(relativePath: { eq: "searching-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`;

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Section, Container, media } from '@styles';
 import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';  // Import graphql from Gatsby
 
 const StyledSection = styled(Section)`
   padding-top: 10rem;  /* Reduced padding */
@@ -91,3 +92,18 @@ const Hero = ({ data }) => {
 };
 
 export default Hero;
+
+// GraphQL query to fetch the image data
+export const query = graphql`
+  query {
+    blast: file(relativePath: { eq: "blast-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`;

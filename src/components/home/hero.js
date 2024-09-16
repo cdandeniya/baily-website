@@ -4,6 +4,8 @@ import { media, Section, Container } from '@styles';
 import { motion } from 'framer-motion';
 import useMousePosition from '@hooks/useMousePosition';
 import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';  // Import graphql from Gatsby
+
 
 const StyledSection = styled(Section)`
   padding-top: 15rem;

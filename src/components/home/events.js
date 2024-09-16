@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, Button, DefaultText } from '@styles';
 import { GatsbyImage as Img } from 'gatsby-plugin-image';
+import { graphql } from 'gatsby';  // Import graphql from Gatsby
 
 const CustomSection = styled(Section)`
   ${media.bigDesktop`padding-top: 24rem;`};
@@ -100,3 +101,18 @@ const Events = ({ data }) => {
 };
 
 export default Events;
+
+// GraphQL query to fetch the image data
+export const query = graphql`
+  query {
+    drawing: file(relativePath: { eq: "drawing-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`;

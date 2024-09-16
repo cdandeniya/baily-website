@@ -5010,7 +5010,7 @@ function getForwards(collectedScripts) {
 /***/ 6877:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-exports.components={"component---src-pages-404-js":()=>__webpack_require__.e(/* import() | component---src-pages-404-js */ 125).then(__webpack_require__.bind(__webpack_require__, 3331)),"component---src-pages-about-js":()=>__webpack_require__.e(/* import() | component---src-pages-about-js */ 432).then(__webpack_require__.bind(__webpack_require__, 6901)),"component---src-pages-contact-js":()=>__webpack_require__.e(/* import() | component---src-pages-contact-js */ 209).then(__webpack_require__.bind(__webpack_require__, 5351)),"component---src-pages-index-js":()=>__webpack_require__.e(/* import() | component---src-pages-index-js */ 293).then(__webpack_require__.bind(__webpack_require__, 2601)),"component---src-pages-sponsors-js":()=>__webpack_require__.e(/* import() | component---src-pages-sponsors-js */ 56).then(__webpack_require__.bind(__webpack_require__, 581))};
+exports.components={"component---src-pages-404-js":()=>__webpack_require__.e(/* import() | component---src-pages-404-js */ 125).then(__webpack_require__.bind(__webpack_require__, 3331)),"component---src-pages-about-js":()=>__webpack_require__.e(/* import() | component---src-pages-about-js */ 432).then(__webpack_require__.bind(__webpack_require__, 5768)),"component---src-pages-contact-js":()=>__webpack_require__.e(/* import() | component---src-pages-contact-js */ 209).then(__webpack_require__.bind(__webpack_require__, 5351)),"component---src-pages-index-js":()=>Promise.all(/* import() | component---src-pages-index-js */[__webpack_require__.e(501), __webpack_require__.e(293)]).then(__webpack_require__.bind(__webpack_require__, 2601)),"component---src-pages-sponsors-js":()=>Promise.all(/* import() | component---src-pages-sponsors-js */[__webpack_require__.e(501), __webpack_require__.e(56)]).then(__webpack_require__.bind(__webpack_require__, 581))};
 
 /***/ }),
 
@@ -25289,7 +25289,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"gatsby","description":"Blazin
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + {"56":"component---src-pages-sponsors-js","125":"component---src-pages-404-js","209":"component---src-pages-contact-js","293":"component---src-pages-index-js","432":"component---src-pages-about-js"}[chunkId] + ".js";
+/******/ 			return "" + ({"56":"component---src-pages-sponsors-js","125":"component---src-pages-404-js","209":"component---src-pages-contact-js","293":"component---src-pages-index-js","432":"component---src-pages-about-js"}[chunkId] || chunkId) + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
