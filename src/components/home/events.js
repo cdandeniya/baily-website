@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, Button, DefaultText } from '@styles';
-import Img from 'gatsby-plugin-image';
-
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
 
 const CustomSection = styled(Section)`
   ${media.bigDesktop`padding-top: 24rem;`};
@@ -83,7 +82,7 @@ const Events = ({ data }) => {
       <Container>
         <ImageWrapper>
           <div data-scroll data-scroll-direction="horizontal" data-scroll-speed={1}>
-            <StyledImage fluid={data.drawing.childImageSharp.fluid} alt="Drawing" />
+            <StyledImage image={data.drawing.childImageSharp.gatsbyImageData} alt="Drawing" />
           </div>
         </ImageWrapper>
         <StyledCard bg="var(--yellow)" color="var(--text)" width="60%">

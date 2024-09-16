@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, DefaultText } from '@styles';
-import Img from 'gatsby-plugin-image';
-
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 35vh;
@@ -100,7 +99,7 @@ const About = ({ data }) => {
       <Container>
         <Card bg="var(--purple)" color="var(--white)">
           <ImageWrapper data-scroll data-scroll-speed={1}>
-            <StyledImage fluid={data.searching.childImageSharp.fluid} alt="Searching" />
+            <StyledImage image={data.searching.childImageSharp.gatsbyImageData} alt="Searching" />
           </ImageWrapper>
           <TextWrapper>
             <Label>About us</Label>

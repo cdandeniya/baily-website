@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, Container, media } from '@styles';
-import Img from 'gatsby-plugin-image';
-
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 10rem;  /* Reduced padding */
@@ -83,7 +82,7 @@ const Hero = ({ data }) => {
             </Description>
           </Col>
           <Col>
-            <StyledImage fluid={data.blast.childImageSharp.fluid} alt="About us" />
+            <StyledImage image={data.blast.childImageSharp.gatsbyImageData} alt="About us" />
           </Col>
         </Row>
       </Container>

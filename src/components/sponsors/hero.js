@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, Container, Button, media } from '@styles';
-import Img from 'gatsby-plugin-image';
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 10rem;
@@ -74,7 +74,7 @@ const Hero = ({ data }) => {
             </ButtonWrapper>
           </Col>
           <Col>
-            <StyledImage fluid={data.heart.childImageSharp.fluid} alt="About us" />
+            <StyledImage image={data.heart.childImageSharp.gatsbyImageData} alt="About us" />
           </Col>
         </Row>
       </Container>

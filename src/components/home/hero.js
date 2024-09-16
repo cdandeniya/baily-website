@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import { media, Section, Container } from '@styles';
 import { motion } from 'framer-motion';
 import useMousePosition from '@hooks/useMousePosition';
-import Img from 'gatsby-plugin-image';
-
+import { GatsbyImage as Img } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 15rem;
@@ -114,7 +113,7 @@ const Hero = ({ data }) => {
           transition={{ duration: 1.7, yoyo: Infinity }}>
           <div data-scroll data-scroll-speed={4}>
             <motion.div style={{ x: x / 100, y: y / 100 }}>
-              <StyledImage fluid={data.rocket.childImageSharp.fluid} alt="Rocket" />
+              <StyledImage image={data.rocket.childImageSharp.gatsbyImageData} alt="Rocket" />
             </motion.div>
           </div>
         </VeryTop>
@@ -124,21 +123,20 @@ const Hero = ({ data }) => {
           transition={{ duration: 1.7, yoyo: Infinity, delay: 1 }}>
           <div data-scroll data-scroll-speed={3}>
             <motion.div style={{ x: x / 80, y: y / 80 }}>
-              <StyledImage fluid={data.bucket.childImageSharp.fluid} alt="Bucket" />
+              <StyledImage image={data.bucket.childImageSharp.gatsbyImageData} alt="Bucket" />
             </motion.div>
           </div>
         </LowerTop>
         <TextWrapper>
           <BigText>Where Magic Meets Learning: Discover Innovation in Every Toy!</BigText>
         </TextWrapper>
-        <div />
         <BottomRight
           initial={{ y: 0 }}
           animate={{ y: 25 }}
           transition={{ duration: 1.7, yoyo: Infinity, delay: 1 }}>
           <div data-scroll data-scroll-speed={2}>
             <motion.div style={{ x: x / 50, y: y / 50 }}>
-              <StyledImage fluid={data.folder.childImageSharp.fluid} alt="Folder" />
+              <StyledImage image={data.folder.childImageSharp.gatsbyImageData} alt="Folder" />
             </motion.div>
           </div>
         </BottomRight>
@@ -148,7 +146,7 @@ const Hero = ({ data }) => {
           transition={{ duration: 1.7, yoyo: Infinity, delay: 1 }}>
           <div data-scroll data-scroll-speed={3}>
             <motion.div style={{ x: x / 20, y: y / 20 }}>
-              <StyledImage fluid={data.potion.childImageSharp.fluid} alt="Potion" />
+              <StyledImage image={data.potion.childImageSharp.gatsbyImageData} alt="Potion" />
             </motion.div>
           </div>
         </BottomLeft>
@@ -158,3 +156,45 @@ const Hero = ({ data }) => {
 };
 
 export default Hero;
+
+// GraphQL query to fetch the image data
+export const query = graphql`
+  query {
+    rocket: file(relativePath: { eq: "rocket-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+    bucket: file(relativePath: { eq: "bucket-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+    folder: file(relativePath: { eq: "folder-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+    potion: file(relativePath: { eq: "potion-image.jpg" }) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          formats: [AUTO, WEBP, AVIF]
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`;
