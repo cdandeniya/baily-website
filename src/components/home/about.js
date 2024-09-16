@@ -5,22 +5,37 @@ import Img from 'gatsby-image';
 
 const StyledSection = styled(Section)`
   padding-top: 35vh;
+
+  ${media.tablet`
+    padding-top: 20vh; /* Reduce padding for mobile */
+  `};
+  ${media.thone`
+    padding-top: 10vh; /* Further reduce padding for phones */
+  `};
 `;
 
 const TextWrapper = styled.div`
   max-width: 1000px;
+  padding: 1rem;
 
   ${media.massive`
     padding-top: 8rem;
     max-width: 1500px;
   `};
-  ${media.thone`text-align: left;`}; /* Keep text left-aligned */
+  ${media.thone`
+    text-align: left;
+    padding: 1rem; /* Add padding for phones */
+  `}; 
 `;
 
 const ImageWrapper = styled.div`
   display: flex;
-  justify-content: center; /* Center the image horizontally */
-  margin-top: 2rem; /* Add some space between the text and the image */
+  justify-content: center;
+  margin-top: 2rem;
+
+  ${media.thone`
+    margin-top: 1rem; /* Reduce margin for phones */
+  `};
 `;
 
 const StyledImage = styled(Img)`
@@ -35,10 +50,9 @@ const StyledImage = styled(Img)`
     margin-top: -15rem;
   `};
   ${media.thone`
-    width: 80vw;
-    margin-top: -13rem;
+    width: 90vw; /* Scale down image width for phones */
+    margin-top: 0; /* No negative margin on phones */
   `};
-  ${media.phablet`margin-top: -10rem;`};
 `;
 
 const Title = styled.h1`
@@ -50,16 +64,22 @@ const Title = styled.h1`
 
   ${media.tablet`font-size: 55px;`};
   ${media.thone`
-    font-size: 30px;
+    font-size: 25px; /* Reduce font size for phones */
     letter-spacing: -1px;
+    margin-top: 0.5rem;
   `};
 `;
 
 const CustomDescription = styled(DefaultText)`
   max-width: 75%;
-  margin: 0; /* Keep the description left-aligned */
+  margin: 0;
 
   ${media.tablet`max-width: 100%;`};
+  ${media.thone`
+    max-width: 100%; /* Full width on phones */
+    font-size: 16px; /* Smaller font size for phones */
+    line-height: 1.4;
+  `};
 `;
 
 const Label = styled.span`
@@ -68,7 +88,9 @@ const Label = styled.span`
   font-weight: 500;
   text-transform: uppercase;
 
-  ${media.thone`font-size: 19px;`};
+  ${media.thone`
+    font-size: 18px; /* Reduce label font size on phones */
+  `};
 `;
 
 const About = ({ data }) => {
