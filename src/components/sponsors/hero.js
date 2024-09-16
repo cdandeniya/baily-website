@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, Container, Button, media } from '@styles';
-import Img from 'gatsby-image';
+import Img from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 10rem;

@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { media, Section, Container } from '@styles';
 import { motion } from 'framer-motion';
 import useMousePosition from '@hooks/useMousePosition';
-import Img from 'gatsby-image';
+import Img from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
   padding-top: 15rem;

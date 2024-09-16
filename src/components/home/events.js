@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media, Container, Section, Card, Button, DefaultText } from '@styles';
-import Img from 'gatsby-image';
+import Img from 'gatsby-plugin-image';
 
 const CustomSection = styled(Section)`
   ${media.bigDesktop`padding-top: 24rem;`};
