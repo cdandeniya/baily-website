@@ -6,6 +6,7 @@ import { media, Container, Section } from '@styles';
 const StyledSection = styled(Section)`
   padding-top: 4rem;  /* Adjust padding */
   text-align: center;  /* Ensuring all items are centered */
+  font-family: 'Poppins', sans-serif;  /* Applying Poppins font globally */
   ${media.thone`
     padding-top: 3rem;
   `};
@@ -15,16 +16,16 @@ const MeetTeamText = styled.h3`
   font-size: 18px;  /* Small font size for "MEET THE TEAM" */
   color: #B4B4B4;  /* Light gray color */
   text-align: center;
-  margin-bottom: 1rem;  /* Adds some space below the label */
+  margin-bottom: 0.5rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
   text-transform: uppercase;
-  font-weight: 500;  /* Slightly bolder text */
+  font-weight: bold;  /* Bolded text */
 `;
 
 const CenterText = styled.h2`
   font-size: 64px;  /* Larger font for title */
   text-align: center;
   margin-bottom: 1rem;  /* Reduced margin */
-  font-weight: bold;
+  font-weight: bold;  /* Bolded text */
   color: #386AEA;  /* Updated color to match the request */
   
   ${media.tablet`
@@ -38,7 +39,7 @@ const Subtitle = styled.p`
   text-align: center;
   margin: 0 auto 2rem auto;  /* Centering the text and adjusting margin */
   color: #4A4A4A;  /* Darker gray for better contrast */
-  font-weight: 500;  /* Slightly bolder to stand out */
+  font-weight: bold;  /* Bolded text */
   line-height: 1.5;  /* Increase line spacing for readability */
   
   ${media.tablet`
@@ -88,7 +89,7 @@ const StyledImage = styled(Img)`
 const Name = styled.h3`
   font-size: 22px;  /* Font size matching the design */
   color: var(--text);
-  font-weight: bold;
+  font-weight: bold;  /* Bolded text */
   margin: 0;
 
   ${media.tablet`
@@ -99,7 +100,7 @@ const Name = styled.h3`
 const Position = styled.span`
   font-size: 16px;
   color: var(--dark-gray);
-  font-weight: 500;
+  font-weight: bold;  /* Bolded text */
 `;
 
 const ReadMore = styled.button`
@@ -110,7 +111,7 @@ const ReadMore = styled.button`
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: bold;  /* Bolded text */
   margin-top: 1rem;
   
   :hover {
