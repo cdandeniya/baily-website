@@ -6,12 +6,6 @@ const CardsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
 
-  div:last-child {
-    ${media.desktop`
-      margin-top: 2rem;
-    `};
-  }
-
   ${media.desktop`
     flex-direction: column;
   `};
@@ -22,6 +16,7 @@ const TextWrapper = styled.div`
 
   ${media.thone`
     text-align: center;
+    margin-bottom: 1.5rem;  /* Add some margin for spacing */
   `};
 `;
 
@@ -30,6 +25,11 @@ const Title = styled.h2`
   letter-spacing: -4px;
   font-weight: 700;
   margin: 0;
+
+  ${media.thone`
+    font-size: 45px; /* Adjusted for smaller screens */
+    margin-bottom: 1rem;  /* Add margin for spacing */
+  `};
 `;
 
 const Info = ({ data }) => {
