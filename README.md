@@ -1,4 +1,4 @@
-<p align="center"><img width="200" alt="Baily AI logo" src="https://imgur.com/a/PBuGMn2"></p>
+<p align="center"><img width="200" alt="Baily AI logo" src="https://imgur.com/a/PBuGMn2.png"></p>
 <h1 align="center"><a href="https://bailysbox.com/">Baily AI Website</a></h1>
 <p align="center"><i>The official repository for the Baily AI website</i></p>
 
