@@ -1,22 +1,30 @@
-<<<<<<< HEAD
-# baily-website
-=======
-<<<<<<< HEAD
-# baily-website
-=======
-<p align="center"><img width="192" alt="CODE logo" src="https://i.imgur.com/4387Kzs.png"></p>
-<h1 align="center"><a href="https://techcodes.org/">Council of Digital Engineers v1</a></h1>
-<p align="center"><i>The source code for techcodes.org</i></p>
+<p align="center"><img width="200" alt="Baily AI logo" src="https://imgur.com/a/PBuGMn2.png"></p>
+<h1 align="center"><a href="https://bailysbox.com/">Baily AI Website</a></h1>
+<p align="center"><i>The official repository for the Baily AI website</i></p>
 
-Our new website—powered by [Gatsby] and hosted on [Netlify].
+Welcome to the source code repository for Baily AI's official website. This site is designed to showcase our innovative, AI-powered toy companions for children aged 5-12. Our products focus on affordability, customizability, and promoting educational growth through interactive play.
 
-[gatsby]: https://gatsbyjs.com
-[netlify]: https://www.netlify.com
+## Technology Stack
+- **Frontend**: Built with React.js for a dynamic user experience
+- **Backend**: Node.js provides a robust server-side platform
+- **Hosting**: Deployed on Netlify for efficient scaling and performance
+- **Database**: MongoDB for storing user data and product information securely
 
-Code under MIT License, assets may not be re-used or re-distributed.
+## Development Setup
+To get started with development, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/BailyAI/baily-website.git
+2. Install dependencies:    
+   ```npm install
+3. Start the development server:
+   ```npm start
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ---
 
-By [@cdandeniya] for Baily AI, 2024. MIT License.
->>>>>>> 83e0cd8 (Initial commit)
->>>>>>> d05f5e6 (initial commit)
+<p align="center">Baily AI © 2024. All Rights Reserved.</p>
+

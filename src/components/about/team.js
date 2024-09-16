@@ -1,20 +1,21 @@
-import React from 'react';
-import Img from 'gatsby-image';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { media, Container, Section } from '@styles';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 const StyledSection = styled(Section)`
-  padding-top: 6rem;  /* Reduced padding to match design */
+  padding-top: 6rem; /* Adjusted padding */
+  text-align: center;
 
   ${media.thone`
     padding-top: 4.25rem;
   `};
 `;
 
-const CenterText = styled.h2`
-  font-size: 48px;  /* Adjusted for title */
+const Title = styled.h2`
+  font-size: 48px; /* Bold title */
   text-align: center;
-  margin-bottom: 1.5rem;  /* Reduced margin */
+  margin-bottom: 1.5rem; /* Spacing below title */
   font-weight: bold;
 
   ${media.tablet`
@@ -25,7 +26,7 @@ const CenterText = styled.h2`
 const Subtitle = styled.p`
   font-size: 18px;
   text-align: center;
-  margin-bottom: 4rem;  /* More space after subtitle */
+  margin-bottom: 4rem; /* Spacing below subtitle */
   color: var(--dark-gray);
 
   ${media.tablet`
@@ -42,95 +43,118 @@ const GridWrapper = styled.div`
 
   ${media.tablet`
     grid-template-columns: 1fr;
+    grid-gap: 3rem;
   `};
 `;
 
 const Card = styled.div`
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-`;
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
 
-const StyledImage = styled(Img)`
-  width: 200px;  /* Larger image */
-  height: 250px;
-  border-radius: 16px;  /* Rounded corners */
-  object-fit: cover;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1);
-
-  :hover {
-    transform: scale(1.05);
+  &:hover img {
+    transform: scale(1.1);
   }
 
-  ${media.tablet`
-    width: 150px;  /* Smaller image on mobile */
-    height: 200px;
-  `};
+  &:hover div {
+    opacity: 1;
+  }
+`;
+
+const ImageWrapper = styled.div`
+  position: relative;
+`;
+
+const StyledImage = styled(GatsbyImage)`
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 12px;
+`;
+
+const Overlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 12px;
 `;
 
 const Name = styled.h3`
+  color: #fff;
   font-size: 24px;
-  color: var(--text);
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 0.5rem;
 
-  ${media.tablet`
+  ${media.thone`
     font-size: 20px;
   `};
 `;
 
-const Position = styled.span`
-  font-size: 16px;
-  color: var(--dark-gray);
-  font-weight: 500;
-`;
-
-const ReadMore = styled.button`
+const ReadMoreButton = styled.button`
   background-color: transparent;
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  border: 2px solid #fff;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 1rem;
-  
-  :hover {
-    background-color: var(--blue);
-    color: white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    color: #000;
   }
+
+  ${media.tablet`
+    font-size: 14px;
+  `};
 `;
 
 const Team = ({ data }) => {
   return (
     <StyledSection>
       <Container max>
-        <CenterText>Making it happen</CenterText>
-        <Subtitle>Discover the Creative Minds Behind Our Toys, Shaping Future Learning in Classrooms Globally</Subtitle>
+        <Title>Making it happen</Title>
+        <Subtitle>
+          Discover the Creative Minds Behind Our Toys, Shaping Future Learning in Classrooms Globally
+        </Subtitle>
         <GridWrapper>
           <Card>
-            <StyledImage
-              fluid={data.chanul.childImageSharp.fluid}
-              alt="Chanul Dandeniya"
-              objectFit="cover"
-            />
-            <Name>Chanul Dandeniya</Name>
-            <Position>President</Position>
-            <ReadMore>Read More</ReadMore>
+            <ImageWrapper>
+              <StyledImage
+                image={data.chanul.childImageSharp.gatsbyImageData}
+                alt="Chanul Dandeniya"
+              />
+              <Overlay>
+                <Name>Chanul Dandeniya</Name>
+                <ReadMoreButton>Read More</ReadMoreButton>
+              </Overlay>
+            </ImageWrapper>
           </Card>
-
           <Card>
-            <StyledImage
-              fluid={data.kyrylo.childImageSharp.fluid}
-              alt="Ahad Hassan"
-              objectFit="cover"
-            />
-            <Name>Ahad Hassan</Name>
-            <Position>Vice President</Position>
-            <ReadMore>Read More</ReadMore>
+            <ImageWrapper>
+              <StyledImage
+                image={data.ahad.childImageSharp.gatsbyImageData}
+                alt="Ahad Hassan"
+              />
+              <Overlay>
+                <Name>Ahad Hassan</Name>
+                <ReadMoreButton>Read More</ReadMoreButton>
+              </Overlay>
+            </ImageWrapper>
           </Card>
         </GridWrapper>
       </Container>
