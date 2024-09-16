@@ -147,7 +147,7 @@ const Team = ({ data }) => {
           <Card>
             <ImageWrapper>
               <StyledImage
-                image={data.ahad.childImageSharp.gatsbyImageData}
+                image={data.kyrylo.childImageSharp.gatsbyImageData}
                 alt="Ahad Hassan"
               />
               <Overlay>
