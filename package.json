@@ -4,7 +4,8 @@
   "description": "<p align=\"center\"><img width=\"200\" alt=\"Baily AI logo\" src=\"https://imgur.com/a/PBuGMn2\"></p> <h1 align=\"center\"><a href=\"https://bailysbox.com/\">Baily AI Website</a></h1> <p align=\"center\"><i>The official repository for the Baily AI website</i></p>",
   "main": "gatsby-browser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gatsby build"
   },
   "author": "",
   "license": "ISC",
@@ -13,4 +14,5 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   }
+  
 }
