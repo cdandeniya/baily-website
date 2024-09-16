@@ -1,8 +1,8 @@
-<p align="center"><img width="200" alt="Baily AI logo" src="https://imgur.com/a/PBuGMn2.png"></p>
+<p align="center"><img width="200" alt="Baily AI logo" src="https://imgur.com/a/PBuGMn2"></p>
 <h1 align="center"><a href="https://bailysbox.com/">Baily AI Website</a></h1>
 <p align="center"><i>The official repository for the Baily AI website</i></p>
 
-Welcome to the source code repository for Baily AI's official website. This site is designed to showcase our innovative, AI-powered toy companions for children aged 5-12. Our products focus on affordability, customizability, and promoting educational growth through interactive play
+Welcome to the source code repository for Baily AI's official website. This site is designed to showcase our innovative, AI-powered toy companions for children aged 5-12. Our products focus on affordability, customizability, and promoting educational growth through interactive play.
 
 ## Technology Stack
 - **Frontend**: Built with React.js for a dynamic user experience
@@ -16,9 +16,11 @@ To get started with development, follow these steps:
    ```bash
    git clone https://github.com/BailyAI/baily-website.git
 2. Install dependencies:    
-   ```npm install
+   ```bash
+   npm install
 3. Start the development server:
-   ```npm start
+   ```bash
+   npm start
 
 ## License
 
