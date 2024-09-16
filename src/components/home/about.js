@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { media, Container, Section, Card, DefaultText } from '@styles';
 import Img from 'gatsby-plugin-image';
 
+
 const StyledSection = styled(Section)`
   padding-top: 35vh;
 

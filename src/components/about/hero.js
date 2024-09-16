@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Section, Container, media } from '@styles';
 import Img from 'gatsby-plugin-image';
 
+
 const StyledSection = styled(Section)`
   padding-top: 10rem;  /* Reduced padding */
   padding-bottom: 10rem;  /* Reduced padding */

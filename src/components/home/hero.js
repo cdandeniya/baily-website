@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import useMousePosition from '@hooks/useMousePosition';
 import Img from 'gatsby-plugin-image';
 
+
 const StyledSection = styled(Section)`
   padding-top: 15rem;
   padding-bottom: 15rem;
