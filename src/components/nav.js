@@ -119,13 +119,13 @@ const LogoWrapper = styled(Link)`
   gap: 1rem;
 `;
 const StyledLogo = styled.img`
-  width: 4rem;
-  height: auto; /* Adjust the height automatically to maintain the aspect ratio */
-  object-fit: contain; /* Ensures the image scales correctly without being squished */
+  width: 5rem;  /* Increase the width */
+  height: auto; /* Adjust height automatically to maintain aspect ratio */
+  object-fit: contain; /* Ensures the image scales correctly without distortion */
 
   ${media.thone`
-    width: 3rem;
-    height: auto; /* Maintain aspect ratio on smaller screens */
+    width: 4rem;  /* Adjust size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
   `};
 `;
 const NavLink = styled(Link)`
