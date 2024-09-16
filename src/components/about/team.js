@@ -4,40 +4,41 @@ import styled from 'styled-components';
 import { media, Container, Section } from '@styles';
 
 const StyledSection = styled(Section)`
-  padding-top: 6rem;  /* Reduced padding to match design */
+  padding-top: 4rem;  /* Adjust padding */
 
   ${media.thone`
-    padding-top: 4.25rem;
+    padding-top: 3rem;
   `};
 `;
 
 const CenterText = styled.h2`
-  font-size: 48px;  /* Adjusted for title */
+  font-size: 56px;  /* Larger font for title */
   text-align: center;
-  margin-bottom: 1.5rem;  /* Reduced margin */
+  margin-bottom: 1rem;  /* Reduced margin */
   font-weight: bold;
+  color: var(--blue);  /* Match color as in design */
 
   ${media.tablet`
-    font-size: 36px;
+    font-size: 42px;
   `};
 `;
 
 const Subtitle = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
-  margin-bottom: 4rem;  /* More space after subtitle */
-  color: var(--dark-gray);
+  margin-bottom: 2.5rem;  /* Adjusted space after subtitle */
+  color: var(--dark-gray); /* Match gray text as in design */
 
   ${media.tablet`
-    font-size: 16px;
-    margin-bottom: 3rem;
+    font-size: 18px;
+    margin-bottom: 2rem;
   `};
 `;
 
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 4rem;
+  grid-gap: 2rem;  /* Reduced space between cards */
   justify-items: center;
 
   ${media.tablet`
@@ -54,10 +55,11 @@ const Card = styled.div`
 `;
 
 const StyledImage = styled(Img)`
-  width: 200px;  /* Larger image */
-  height: 250px;
-  border-radius: 16px;  /* Rounded corners */
+  width: 180px;  /* Image dimensions */
+  height: 230px;
+  border-radius: 12px;  /* Rounded corners */
   object-fit: cover;
+  filter: grayscale(100%);  /* Black-and-white effect */
   transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1);
 
   :hover {
@@ -65,13 +67,13 @@ const StyledImage = styled(Img)`
   }
 
   ${media.tablet`
-    width: 150px;  /* Smaller image on mobile */
-    height: 200px;
+    width: 140px;
+    height: 180px;
   `};
 `;
 
 const Name = styled.h3`
-  font-size: 24px;
+  font-size: 22px;  /* Font size matching the design */
   color: var(--text);
   font-weight: bold;
   margin: 0;
