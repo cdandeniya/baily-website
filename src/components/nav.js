@@ -120,11 +120,12 @@ const LogoWrapper = styled(Link)`
 `;
 const StyledLogo = styled.img`
   width: 4rem;
-  height: 4rem;
+  height: auto; /* Adjust the height automatically to maintain the aspect ratio */
+  object-fit: contain; /* Ensures the image scales correctly without being squished */
 
   ${media.thone`
     width: 3rem;
-    height: 3rem;
+    height: auto; /* Maintain aspect ratio on smaller screens */
   `};
 `;
 const NavLink = styled(Link)`
