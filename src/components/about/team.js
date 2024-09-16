@@ -11,24 +11,35 @@ const StyledSection = styled(Section)`
   `};
 `;
 
+const MeetTeamText = styled.h3`
+  font-size: 18px;  /* Small font size for "MEET THE TEAM" */
+  color: #B4B4B4;  /* Light gray color */
+  text-align: center;
+  margin-bottom: 1rem;  /* Adds some space below the label */
+  text-transform: uppercase;
+  font-weight: 500;  /* Slightly bolder text */
+`;
+
 const CenterText = styled.h2`
-  font-size: 56px;  /* Larger font for title */
+  font-size: 64px;  /* Larger font for title */
   text-align: center;
   margin-bottom: 1rem;  /* Reduced margin */
   font-weight: bold;
   color: #386AEA;  /* Updated color to match the request */
   
   ${media.tablet`
-    font-size: 42px;
+    font-size: 48px;
   `};
 `;
 
 const Subtitle = styled.p`
   font-size: 20px;
+  max-width: 600px;  /* Limit the width to create two lines */
   text-align: center;
-  margin-bottom: 2rem;  /* Adjusted space after subtitle */
+  margin: 0 auto 2rem auto;  /* Centering the text and adjusting margin */
   color: #4A4A4A;  /* Darker gray for better contrast */
   font-weight: 500;  /* Slightly bolder to stand out */
+  line-height: 1.5;  /* Increase line spacing for readability */
   
   ${media.tablet`
     font-size: 18px;
@@ -39,7 +50,7 @@ const Subtitle = styled.p`
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 2rem;  /* Reduced space between cards */
+  grid-gap: 1rem;  /* Reduced space between cards */
   justify-items: center;
   align-items: center;
 
@@ -57,8 +68,8 @@ const Card = styled.div`
 `;
 
 const StyledImage = styled(Img)`
-  width: 180px;  /* Image dimensions */
-  height: 230px;
+  width: 260px;  /* Increased image width */
+  height: 320px;  /* Increased image height */
   border-radius: 12px;  /* Rounded corners */
   object-fit: cover;
   filter: grayscale(100%);  /* Black-and-white effect */
@@ -69,8 +80,8 @@ const StyledImage = styled(Img)`
   }
 
   ${media.tablet`
-    width: 140px;
-    height: 180px;
+    width: 220px;
+    height: 280px;
   `};
 `;
 
@@ -112,6 +123,7 @@ const Team = ({ data }) => {
   return (
     <StyledSection>
       <Container max>
+        <MeetTeamText>MEET THE TEAM</MeetTeamText>  {/* New addition */}
         <CenterText>Making it happen</CenterText>
         <Subtitle>Discover the Creative Minds Behind Our Toys, Shaping Future Learning in Classrooms Globally</Subtitle>
         <GridWrapper>
