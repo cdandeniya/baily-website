@@ -5,7 +5,7 @@ import { media, Container, Section } from '@styles';
 
 const StyledSection = styled(Section)`
   padding-top: 4rem;  /* Adjust padding */
-
+  text-align: center;  /* Ensuring all items are centered */
   ${media.thone`
     padding-top: 3rem;
   `};
@@ -16,8 +16,8 @@ const CenterText = styled.h2`
   text-align: center;
   margin-bottom: 1rem;  /* Reduced margin */
   font-weight: bold;
-  color: var(--blue);  /* Match color as in design */
-
+  color: #386AEA;  /* Updated color to match the request */
+  
   ${media.tablet`
     font-size: 42px;
   `};
@@ -26,12 +26,13 @@ const CenterText = styled.h2`
 const Subtitle = styled.p`
   font-size: 20px;
   text-align: center;
-  margin-bottom: 2.5rem;  /* Adjusted space after subtitle */
-  color: var(--dark-gray); /* Match gray text as in design */
-
+  margin-bottom: 2rem;  /* Adjusted space after subtitle */
+  color: #4A4A4A;  /* Darker gray for better contrast */
+  font-weight: 500;  /* Slightly bolder to stand out */
+  
   ${media.tablet`
     font-size: 18px;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   `};
 `;
 
@@ -40,6 +41,7 @@ const GridWrapper = styled.div`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;  /* Reduced space between cards */
   justify-items: center;
+  align-items: center;
 
   ${media.tablet`
     grid-template-columns: 1fr;
@@ -91,8 +93,8 @@ const Position = styled.span`
 
 const ReadMore = styled.button`
   background-color: transparent;
-  border: 2px solid var(--blue);
-  color: var(--blue);
+  border: 2px solid #386AEA;  /* Updated border color */
+  color: #386AEA;  /* Updated text color */
   padding: 0.5rem 1rem;
   border-radius: 8px;
   cursor: pointer;
@@ -101,7 +103,7 @@ const ReadMore = styled.button`
   margin-top: 1rem;
   
   :hover {
-    background-color: var(--blue);
+    background-color: #386AEA;  /* Button background on hover */
     color: white;
   }
 `;
