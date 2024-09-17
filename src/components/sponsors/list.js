@@ -2,8 +2,6 @@ import React from 'react';
 import { Section, Container } from '@styles';
 import styled from 'styled-components';
 
-import Linode from '@images/sponsors/linode.svg';
-
 const Row = styled.div`
   display: flex;
   flex-direction: row;

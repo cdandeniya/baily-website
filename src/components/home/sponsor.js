@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { media, Container, Section, Card, Button } from '@styles';
 
 import Linode from '@images/sponsors/linode.svg';
-import GoDaddy from '@images/sponsors/godaddy.png';
-import StreamYard from '@images/sponsors/streamyard.svg';
 
 const TextWrapper = styled.div`
   max-width: 1000px;
@@ -109,8 +107,6 @@ const Sponsor = () => {
             </ContentWrapper>
             <ImageContainer>
               <SponsorImage src={Linode} alt="Linode" />
-              <SponsorImage src={StreamYard} alt="Stream Yard" />
-              <SponsorImage src={GoDaddy} alt="GoDaddy" />
             </ImageContainer>
           </Row>
         </Card>
