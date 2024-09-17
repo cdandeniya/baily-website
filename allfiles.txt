@@ -36,7 +36,6 @@ eb58baaab8311760a730c4890fbcae8154299715 src/components/home/about.js
 a457f5d36d94c5af945fbc59511d75cd48078ad9 src/components/home/events.js
 1447e0ea0c51e45a6c74148ed9d9bdb8b00ddc58 src/components/home/hero.js
 6c3f20b391490419d8e64c178c78c84ca26a503f src/components/home/index.js
-5960ac81ebe2b4dbbf9add3a73009f4e31e32501 src/components/home/sponsor.js
 e93f395bdc40d0f0c614b11e27d8fa60259ffd35 src/components/icons
 1befd019fa59a921c7ea1e5bcf44133073a6354f src/components/icons/discord.js
 edd1ec91b53ea8705fbe90d3c93d46ca717238ab src/components/icons/formattedIcon.js
