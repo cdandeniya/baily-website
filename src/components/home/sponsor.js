@@ -99,16 +99,14 @@ const Sponsor = () => {
       <Container>
         <Card bg="var(--gray)" color="var(--text)">
           <TextWrapper>
-            <Title>...and get to work with some pretty unique people</Title>
+            <Title>Shaping the Future of Learning with Leading Innovators</Title>
           </TextWrapper>
           <Row>
             <ContentWrapper>
               <Description>
-                Each year, major companies and organizations will sponsor everything that CODE has
-                to offer. It is with their help that CODE can continue to bring computer science to
-                those who need it most and strengthen their passion.
+                At Baily AI, we work with some of the most forward-thinking companies and educational institutions to bring our AI-powered toys to classrooms around the globe. With their support, we continue to design interactive and engaging learning experiences for children, nurturing curiosity and creativity at every step.
               </Description>
-              <Button to="/sponsors">Explore sponsors</Button>
+              <Button to="/contact">Become our Partner</Button>
             </ContentWrapper>
             <ImageContainer>
               <SponsorImage src={Linode} alt="Linode" />

@@ -4,30 +4,36 @@ import { media, Container, Section, Card, Button, DefaultText } from '@styles';
 import Img from 'gatsby-image';
 
 const CustomSection = styled(Section)`
-  ${media.bigDesktop`padding-top: 24rem;`};
-  ${media.tablet`padding-top: 16rem;`};
+  ${media.bigDesktop`padding-top: 18rem;`};
+  ${media.tablet`padding-top: 12rem;`};
+  ${media.phablet`padding-top: 8rem;`};
 `;
 const TextWrapper = styled.div`
-  max-width: 1000px;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
 
   a {
     font-size: 24px;
-
     ${media.tablet`font-size: 18px;`};
   }
 
-  ${media.massive`max-width: 1500px;`};
-  ${media.bigDesktop`padding-top: 10rem;`};
-  ${media.thone`text-align: center;`};
-  ${media.phablet`padding-top: 3rem;`};
+  ${media.massive`max-width: 90%;`};
+  ${media.bigDesktop`padding-top: 8rem;`};
+  ${media.thone`text-align: center; padding-top: 4rem;`};
+  ${media.phablet`padding-top: 2rem;`};
 `;
 const StyledCard = styled(Card)`
-  padding-bottom: 3rem;
+  padding: 4rem 2rem;
+  width: 100%;
+  margin-top: 3rem;
 
-  ${media.bigDesktop`width: 100%;`};
+  ${media.bigDesktop`width: 80%; margin: 0 auto;`};
+  ${media.tablet`width: 90%; margin: 0 auto;`};
+  ${media.phablet`width: 95%;`};
 `;
 const ImageWrapper = styled.div`
-  position: absolute;
+  position: relative;
 `;
 const StyledImage = styled(Img)`
   width: 1000px;
@@ -52,27 +58,26 @@ const StyledImage = styled(Img)`
   `};
 `;
 const Title = styled.h1`
-  font-size: 75px;
-  letter-spacing: -4px;
-  line-height: 110%;
+  font-size: 65px;
+  letter-spacing: -2px;
+  line-height: 1.2;
   font-weight: bold;
-  margin: 0;
+  margin-bottom: 2rem;
 
-  ${media.tablet`font-size: 55px;`};
+  ${media.tablet`font-size: 50px; margin-bottom: 1rem;`};
   ${media.thone`
-    font-size: 30px;
+    font-size: 35px;
     letter-spacing: -1px;
+    margin-bottom: 1rem;
   `};
 `;
 const Description = styled(DefaultText)`
-  max-width: 75%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  max-width: 80%;
+  margin: 3rem auto;
 
   ${media.tablet`
     max-width: 100%;
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin: 2rem auto;
   `};
 `;
 
@@ -85,7 +90,7 @@ const Events = ({ data }) => {
             <StyledImage fluid={data.drawing.childImageSharp.fluid} alt="Drawing" />
           </div>
         </ImageWrapper>
-        <StyledCard bg="var(--yellow)" color="var(--text)" width="60%">
+        <StyledCard bg="var(--yellow)" color="var(--text)">
           <TextWrapper>
             <Title>Meet Curio</Title>
             <Description>

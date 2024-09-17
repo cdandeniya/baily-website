@@ -16,7 +16,7 @@ const MeetTeamText = styled.h3`
   font-size: 18px;  /* Small font size for "MEET THE TEAM" */
   color: #B4B4B4;  /* Light gray color */
   text-align: center;
-  margin-bottom: 0.5rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
+  margin-bottom: 0.25rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
   text-transform: uppercase;
   font-weight: bold;  /* Bolded text */
 `;
@@ -51,7 +51,7 @@ const Subtitle = styled.p`
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;  /* Reduced space between cards */
+  grid-gap: 0.5rem;  /* Reduced space between cards */
   justify-items: center;
   align-items: center;
 
@@ -135,7 +135,7 @@ const Team = ({ data }) => {
               objectFit="cover"
             />
             <Name>Chanul Dandeniya</Name>
-            <Position>President</Position>
+            <Position>Co-Founder</Position>
             <ReadMore>Read More</ReadMore>
           </Card>
 
@@ -146,7 +146,7 @@ const Team = ({ data }) => {
               objectFit="cover"
             />
             <Name>Ahad Hassan</Name>
-            <Position>Vice President</Position>
+            <Position>Co-Founder</Position>
             <ReadMore>Read More</ReadMore>
           </Card>
         </GridWrapper>
