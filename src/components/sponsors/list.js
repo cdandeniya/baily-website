@@ -2,11 +2,7 @@ import React from 'react';
 import { Section, Container } from '@styles';
 import styled from 'styled-components';
 
-import EchoAR from '@images/sponsors/echoar.png';
 import Linode from '@images/sponsors/linode.svg';
-import GoDaddy from '@images/sponsors/godaddy.png';
-import StreamYard from '@images/sponsors/streamyard.svg';
-import HackClubBank from '@images/sponsors/hackclubbank.svg';
 
 const Row = styled.div`
   display: flex;
@@ -38,13 +34,6 @@ const List = () => {
     <Section>
       <Container max>
         <Row>
-          <SponsorImage src={Linode} alt="Linode" />
-        </Row>
-        <Row>
-          <SponsorImage src={EchoAR} alt="echoAR" />
-          <SponsorImage src={GoDaddy} alt="GoDaddy" />
-          <SponsorImage src={StreamYard} alt="StreamYard" />
-          <SponsorImage src={HackClubBank} alt="Hackclub Bank" />
         </Row>
       </Container>
     </Section>

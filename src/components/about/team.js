@@ -16,7 +16,7 @@ const MeetTeamText = styled.h3`
   font-size: 18px;  /* Small font size for "MEET THE TEAM" */
   color: #B4B4B4;  /* Light gray color */
   text-align: center;
-  margin-bottom: 0.25rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
+  margin-bottom: 0.25rem; 
   text-transform: uppercase;
   font-weight: bold;  /* Bolded text */
 `;
@@ -51,7 +51,7 @@ const Subtitle = styled.p`
 const GridWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5rem;  /* Reduced space between cards */
+  grid-gap: 0.25rem;  
   justify-items: center;
   align-items: center;
 

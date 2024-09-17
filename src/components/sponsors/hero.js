@@ -70,7 +70,7 @@ const Hero = ({ data }) => {
               Discover how our AI-powered toys can enhance learning in your classroom. See firsthand how Baily inspires curiosity and educational engagement in schools.
             </Description>
             <ButtonWrapper>
-              <Button href="/sponsorship-prospectus.pdf">Schedule Your Demo</Button>
+              <Button href="/contact">Schedule Your Demo</Button>
             </ButtonWrapper>
           </Col>
           <Col>
