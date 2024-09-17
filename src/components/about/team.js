@@ -16,7 +16,7 @@ const MeetTeamText = styled.h3`
   font-size: 18px;  /* Small font size for "MEET THE TEAM" */
   color: #B4B4B4;  /* Light gray color */
   text-align: center;
-  margin-bottom: 0.2rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
+  margin-bottom: 0.5rem;  /* Reduced space between "MEET THE TEAM" and "Making it happen" */
   text-transform: uppercase;
   font-weight: bold;  /* Bolded text */
 `;
@@ -24,9 +24,9 @@ const MeetTeamText = styled.h3`
 const CenterText = styled.h2`
   font-size: 64px;  /* Larger font for title */
   text-align: center;
-  margin-bottom: 1rem;  
-  font-weight: bold;  
-  color: #386AEA;  
+  margin-bottom: 1rem;  /* Reduced margin */
+  font-weight: bold;  /* Bolded text */
+  color: #386AEA;  /* Updated color to match the request */
   
   ${media.tablet`
     font-size: 48px;
@@ -38,8 +38,8 @@ const Subtitle = styled.p`
   max-width: 600px;  /* Limit the width to create two lines */
   text-align: center;
   margin: 0 auto 2rem auto;  /* Centering the text and adjusting margin */
-  color: #262626;  /* Darker gray for better contrast */
-  font-weight: normal; 
+  color: #4A4A4A;  /* Darker gray for better contrast */
+  font-weight: bold;  /* Bolded text */
   line-height: 1.5;  /* Increase line spacing for readability */
   
   ${media.tablet`
